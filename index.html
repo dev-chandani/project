@@ -1,0 +1,2362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Playwrite+CU:wght@100..400&family=Rubik+Bubbles&display=swap" rel="stylesheet">
+
+   
+
+   
+    <style>
+
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        header{
+            height: 100vh;
+            width: 100vw;
+            /* background-color: aqua; */
+        }
+        .headertop{
+            height: 20%;
+            width: 100%;
+            border: 2px solid orange;
+        }
+        .headleft{
+            height: 100%;
+            width: 20%;
+            /* border: 4px solid black; */
+            text-align: center;
+            font-size: 50px;
+            color: black;
+            padding-top: 40px;
+            float: left;
+            font-family:"Dancing Script", system-ui;
+            font-weight: 800;
+        }
+        .headleft span{
+            color: orange;
+        }
+        .headmiddle{
+            height: 100%;
+            width: 60%;
+            /* border: 4px solid black; */
+            float: left;
+        }
+        .anker {
+            text-align: center;
+            word-spacing: 30px;
+            padding-bottom:100px;
+            height: 100px;
+            width: 800px;
+            font-size: 30px;
+            padding-top: 60px;
+            margin-left: 50px;
+        }
+        .headmiddle a{
+            color: gray;
+            text-decoration: none;
+        }
+        .headright{
+            height: 100%;
+            width:20%;
+            /* border: 4px solid black; */
+            float: left;   
+            padding-top: 50px;    
+         }
+         .headright .search{
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            background-color: orange;
+            float: left;
+            margin-left: 50px;
+            padding-left: 13px;
+            padding-top: 11px;
+         
+         }
+        .search .ri-search-line{
+            border-radius:100px;
+            color: black;
+            font-size: 25px;
+        }
+        .book button{
+            height: 50px;
+            width: 120px;
+            border-radius: 20px;
+            float: left;
+            background-color: orange;
+            color: black;
+            font-size: 20px;
+            margin-left: 30px;
+        }
+        .headerbottom{
+            height: 80%;
+            width: 100%;
+        }
+        .headerbottomleft{
+            height: 100%;
+            width: 50%;
+            /* border: 4px solid; */
+            float: left;
+        }
+        
+        .headerbottomleftcontent{
+            /* background-color: aqua; */
+            height: 80%;
+            width: 80%;
+            margin-top: 80px;
+            margin-left: 80px;
+        }
+        .headerbottomleftcontent .welcome {
+            height: 50px;
+            width: 300px;
+            border-radius: 20px;
+            font-size: 15px;
+            margin-top: 40px;
+            border: 2px solid orange;
+            background-color:  hsl(0, 0%, 100%);
+        }
+        .headerbottomleftcontent p{
+            font-size: 60px;
+            margin-top: 40px;
+            font-weight: 800;
+            font-family:  "Dancing Script", system-ui;
+        }
+        .headerbottomleftcontent span{
+            color: orange;
+        }
+        .buttonss{
+            height:100px ;
+            width: 650px;
+            /* border: 2px solid ; */
+            margin-top: 50px;
+            /* font-size: 50px; */
+        }
+        .booknow{
+            
+         }
+         .Knowmore{
+            margin-left: 30px;
+         }
+        .buttonss button{
+            height: 50px;
+            width: 300px;
+            border-radius: 20px;
+            font-size: 20px;
+            margin-top: 40px;
+            background-color: orange;
+        }
+        .headerbottomright{
+            height: 100%;
+            width: 50%;
+            /* border: 4px solid green; */
+            float: left;
+        }
+        .headerbottomrightbody img{
+            margin-top: 50px;
+            margin-left: 100px;
+            height: 500px;
+            width: 500px;
+        }
+        nav{
+            height: 100vh;
+            width: 100vw;
+            /* background-color: brown; */
+        }
+        .navleft{
+            height: 100%;
+            width: 50%;
+            /* border: 2px solid ; */
+            float: left;
+        }
+        .navleft img{
+            height: 600px;
+            width: 600px;
+            margin-left: 100px;
+            margin-top: 80px;
+            border-radius: 20px;
+        }
+        .navright{
+            height: 100%;
+            width: 50%;
+            /* border: 2px solid ; */
+            float: left;
+        }
+        .navright .about{
+            height:40px;
+            width: 120px;
+            border-radius: 20px;
+            border: 2px solid orange;
+            font-size: 15px;
+            margin-top: 120px;
+            text-align: center;  
+            background-color:hsl(0, 0%, 100%); 
+        }
+        .navright h1{
+            font-family:"Dancing Script", system-ui; 
+            font-size: 50px;
+            margin-top:50px ;
+            font-weight: 800;
+        }
+        .navright p{
+            margin-top:30px ;
+            font-size: 20px;
+        }
+        .features{
+            height: 20%;
+            width: 100%;
+            /* border: 2px solid; */
+            /* margin-top: 50px; */
+            
+        }
+        .fresh{
+            height: 50%;
+            width: 50%;
+            /* border: 3px solid; */
+            float: left;
+            padding-top: 30px;
+            font-size: 20px;
+          
+        }
+        .support{
+            height: 50%;
+            width: 50%;
+            /* border: 3px solid; */
+            float: left;
+            padding-top: 30px;
+            font-size: 20px;
+        }
+        .easy{
+            height: 50%;
+            width: 50%;
+            /* border: 3px solid; */
+            float: left;
+            padding-top: 30px;
+            font-size: 20px;
+        }
+        .delicious{
+            height: 50%;
+            width: 50%;
+            /* border: 3px solid; */
+            float: left;
+            padding-top: 30px;
+            font-size: 20px;
+        }
+        i{
+            font-size:40px;
+            color: orange;
+            margin-right: 20px;
+        }
+        section{
+            height: 100vh;
+            width: 100vw;
+            /* border: 4px solid red; */
+            /* background-color: blue; */
+        }
+        .sectionleft{
+            height:100%;
+            width: 70%;
+            float: left;
+            /* border: 3px solid; */
+        }
+        .sectionleft .box{
+            height: 300px;
+            width: 100%;
+            /* background-color: blanchedalmond; */
+            margin-top: 250px;
+            text-align: center;
+        }
+        
+        .sectionleft .man{
+            height: 250px;
+            width: 300px;
+            background-color: orange;
+            border-radius: 20px;
+            margin-left: 60px;
+            float: left;
+        }
+        .sectionleft .setting{
+            height: 250px;
+            width: 300px;
+            background-color: orange;
+            border-radius: 20px;
+            float: left;
+            margin-left: 40px;
+        }
+        .sectionleft .tick{
+            height: 250px;
+            width: 300px;
+            background-color: orange;
+            border-radius: 20px;
+            float: left;
+            margin-left: 40px;
+        }
+        .box h1{
+            margin-top: 40px;          
+            font-size: 50px;
+        }
+        .box p{
+            margin-top: 10px;            
+            font-size: 20px;
+        }
+        .ri-group-fill{
+            font-size:100px;
+            color:white ;           
+        }
+        .ri-user-settings-fill{
+            font-size:100px;
+            color:white ;   
+        }
+        .ri-check-fill{
+            font-size:100px;
+            color:white; 
+        }
+        .aboutus{
+            height:50px;
+            width: 150px;
+            border-radius: 20px;
+            background-color: orange;
+            /* border: 2px solid orange; */
+            font-size: 15px;
+            margin-top: 50px;
+            text-align: center;
+            padding-left: 20px;
+        }
+        .ri-arrow-right-line{
+            color: black;
+            font-size: 25px;
+            margin-left: 10px;
+        }
+        .sectright{
+            height: 100%;
+            width: 30%;
+            float: left;
+            /* background-color: red; */
+        }
+        .sectright img{
+            height: 450px;
+            width: 400px;
+            margin-top: 150px;
+        }
+        .service{
+            height: 100vh;
+            width: 100vw;
+           
+            /* background-color: blueviolet; */
+        }
+        .servtop{
+            height: 20%;
+            width: 100%;
+            /* background-color: yellowgreen; */
+        }
+        .servbottom{
+            height: 80%;
+            width: 100%;
+            border: 220x solid blue;
+            /* background-color: black; */
+        }
+        .servtop .servbutton{
+            height:50px;
+            width: 200px;
+            border: 2px solid orange;
+            margin-left: 45%;
+            font-size:15px;
+            text-align: center;
+            border-radius: 20px;
+            background-color:  hsl(0, 0%, 100%);
+        }
+        .servtop h1{
+            margin-left: 42%;
+            font-family: "Dancing Script", system-ui;
+            margin-top: 20px;
+            font-weight: 800;
+            font-size: 50px;
+        }
+        .offer{
+            text-align: center;
+            margin-left: 70px;
+            /* border: 1px solid black; */
+            /* font-size: 10px; */
+            
+        }
+        .offer .wedding{
+            height: 300px;
+            width: 300px;
+            border-radius: 30px;
+            background-color: orange;
+            float: left;
+            border: 1px solid orange;
+        }
+        .offer .corporate{
+            height: 300px;
+            width: 300px;
+            border-radius: 30px;
+            background-color: orange;
+            float: left;
+            margin-left: 60px;
+            border: 1px solid orange;
+        }
+        .offer .cocktail{
+            height: 300px;
+            width: 300px;
+            border-radius: 30px;
+            background-color: orange;
+            float: left;
+            margin-left: 60px;
+            border: 1px solid orange;
+        }
+        .offer .bento{
+            height: 300px;
+            width: 300px;
+            border-radius: 30px;
+            background-color: orange;
+            float: left;
+            margin-left: 60px;
+            border: 1px solid orange;
+        }
+        .offer .pub{
+            height: 300px;
+            width: 300px;
+            border-radius: 30px;
+            background-color: orange;
+            float: left;
+            /* margin-left: 0px; */
+            margin-top: 20px;
+            border: 1px solid orange;
+        }
+        .offer .home{
+            height: 300px;
+            width: 300px;
+            border-radius: 30px;
+            background-color: orange;
+            float: left;
+            margin-left:60px;
+            margin-top: 20px;
+            border: 1px solid orange;
+        }
+        .offer .sitdown{
+            height: 300px;
+            width: 300px;
+            border-radius: 30px;
+            background-color: orange;
+            float: left;
+            margin-left:60px;
+            margin-top: 20px;
+            border: 1px solid orange;
+        }
+        .offer .buffet{
+            height: 300px;
+            width: 300px;
+            border-radius: 30px;
+            background-color: orange;
+            float: left;
+            margin-left:60px;
+            margin-top: 20px;
+            border: 1px solid orange;
+        }
+        .offer h2{
+          margin-top: 10px;
+          font-size: 35px;
+        }
+        .offer p{
+          font-size: 20px;
+          color: white;
+          margin-top: 10px;
+        }
+        .offer button{
+            margin-top: 15px;
+            height: 40px;
+            width: 120px;
+            border-radius: 15px;
+            font-size: 15px;
+            background-color:  hsl(0, 0%, 100%);
+        }
+        .first:hover{
+            color: red;
+        }
+        i:hover{
+            background-color: orange;
+            color: white;
+        }
+         button:hover{
+            color: black;
+            background-color: orange;
+        }
+        .offers:hover{
+            background-color: white;
+            color: black;
+        }
+        .offers p:hover{
+            color: black;
+        }
+        .offer i{
+            font-size: 100px;
+            color: black;
+        }
+        .event{
+            height: 100vh;
+            width: 100vw;
+            margin-top: 100px;
+            /* border: 4px solid red; */
+            /* background-color: aqua; */
+        }
+        .eventtop{
+            height: 25%;
+            width: 100%;
+            /* background-color: brown; */
+            /* border: 2px solid black; */
+        }
+        
+        .eventtop  .latevent{
+            height: 40px;
+            width: 200px;
+            border-radius: 20px;
+            border: 2px solid orange;
+            font-size: 15px;
+            text-align: center;
+            margin-left: 47%;
+            background-color:  hsl(0, 0%, 100%);
+            margin-top: 20px;
+        }
+        .eventtop h1{
+            font-family: "Dancing Script", system-ui;
+            margin-top: 5px;
+            font-weight: 800;
+            font-size: 50px;
+            text-align: center;
+        }
+        .manybutton{
+            height: 40%;
+            width: 100%;
+            /* background-color: aquamarine; */
+            /* margin-left: 100px; */
+            margin-top: 10px;
+        }
+        .manybutton button{
+            float: left;
+            height: 40px;     
+            width: 180px;
+            border-radius: 15px;
+            font-size: 17px;
+            margin-left: 100px;
+            text-align: center;
+            border: 2px solid orange;
+            background-color:  hsl(0, 0%, 100%);
+        }
+
+        .eventbottom{
+            height: 75%;
+            width: 100%;
+            /* border: 2px solid green; */
+        }
+        .eventbottom .image8 .img{
+            height: 280px;
+            width: 310px;
+            border-radius:20px;
+            /* border: 2px solid orange; */
+            float: left;
+            margin-left:60px;
+            /* margin-top: 20px; */
+        }
+        .img5{
+            margin-top: 10px;
+        }
+        .img6{
+            margin-top: 10px;
+        }
+        .img7{
+            margin-top: 10px;
+        }
+        .img8{
+            margin-top: 10px;
+        }
+        .image8 img{
+            height: 280px;
+            width: 310px;
+            border-radius:20px;
+            /* border: 2px solid orange; */
+            float: left;
+            /* margin-left:60px; */
+        }
+
+        .menu{
+            height: 100vh;
+            width: 100vw;
+            background-color: #f5e1e1;
+          margin-top: 100px; 
+        }
+        .menu .menutop{
+            height: 25%;
+            width: 100%;
+            /* border-radius: 4px solid black; */
+            /* background-color: blueviolet; */
+        }
+        .menutop .ourmenu{
+            height: 40px;
+            width: 200px;
+            border-radius: 15px;
+            background-color:  hsl(0, 0%, 100%);
+            border: 2px solid orange;
+            text-align: center;
+            margin-left: 45%;
+            font-size: 15px;
+            margin-top: 10px;
+        }
+        .menutop h1{
+            text-align: center;
+            font-size: 50px;
+            font-weight: 800;
+            font-family: "Dancing Script", system-ui ;
+            margin-top: 5px;
+        }
+        .menutop .multiplebutton button{
+            float: left;
+            height: 40px;     
+            width: 180px;
+            border-radius: 15px;
+            font-size: 17px;
+            margin-left: 100px;
+            margin-top: 10px;
+            text-align: center;
+            border: 2px solid orange;
+            background-color:  hsl(0, 0%, 100%);
+        }
+        /* .multiplebutton button .starter{
+            background-color: orange;
+        } */
+        .menu .menubottom{
+            height: 75%;
+            width: 100%;
+            /* border: 4px solid orangered; */
+         }
+         .menuleft{
+            height: 100%;
+            width: 50%;
+            /* border: 4px solid ; */
+            float: left;
+         }
+         .menuright{
+            height: 100%;
+            width: 50%;
+            /* border: 4px solid ; */
+            float: left;
+         }
+         .menubottom .menuleft .paneer{
+            height: 25%;
+            width: 100%;
+            /* border: 3px yellow; */
+            /* background-color: aquamarine; */
+            /* padding-top: 20px; */
+         }
+         .paneer .paneerimg {
+            height: 100%;
+            width: 20%;
+            /* border: 2px solid; */
+            float: left;
+         }
+        .menubottom img{
+            height: 100px;
+            width: 100px;
+            border-radius: 50px;
+            /* border-radius:4px solid orange; */
+            background-color: orange;
+            float: left;
+            margin-left:20px;
+            margin-right:20px;
+            margin-top:30px;
+        }
+        .menubottom h2{
+            font-size: 30px;
+            margin-top: 20px;
+            /* margin-left: 40px; */
+        }
+        .menubottom  p{
+            margin-top: 10px;
+            font-size: 20px;
+        }
+        .line{
+            height: 0px;
+            width: 100%;
+            border: 2px dotted orange;
+            margin-top: 10px;
+        }
+        .paneercontent {
+            height: 100%;
+            width: 80%;
+            /* border: 2px solid orange; */
+            float:left;
+        }
+        .menubottom h3{
+            color: orange;
+            margin-left: 500px;
+            margin-top: -40px;
+            font-size: 40px;        
+        }
+
+        .sweetpotato{
+            height: 25%;
+            width: 100%;
+            /* background-color: red; */
+        }
+        .sweetpotato .sweetpotatoimg{
+            height: 100%;
+            width: 20%;
+            /* border: 2px solid; */
+            float: left;
+        }
+        .sweetpotato .sweetpotatocontent{
+            height: 100%;
+            width: 80%;
+            float: left;
+        }
+
+
+        .Sabudana{
+            height: 25%;
+            width: 100%;
+            /* background-color: blueviolet; */
+            margin-top: -20px;
+        }
+        .Sabudana .sabudanaimg {
+            height: 100%;
+            width: 20%;
+            /* border: 2px solid; */
+            float: left;
+        }
+        .Sabudana .sabudanacontent{
+            height: 100%;
+            width: 80%;
+            float: left;
+        }
+
+
+        .pizza{
+            height: 25%;
+            width: 100%;
+            /* background-color: aquamarine; */
+            float: left;
+        }
+        .pizza .pizzaimg{
+            height: 100%;
+            width: 20%;
+            /* border: 2px solid; */
+            float: left;
+        }
+        .pizza .pizzaimg img{
+            height: 100px;
+            width: 100px;
+            border-radius: 50px;
+            /* border-radius:4px solid orange; */
+            /* background-color: orange; */
+            float: left;
+            margin-top:20px;
+        }
+        .pizza .line{
+            margin-left: 152px;
+            width: 608px;
+        }
+        .pizza .pizzacontent h3{
+            margin-left: 650px;
+        }
+
+        .bacon{
+            height: 25%;
+            width: 100%;
+            /* background-color: aquamarine; */
+            float: left;
+        }
+        .bacon .baconimg{
+            height: 100%;
+            width: 20%;
+            /* border: 2px solid; */
+            float: left;
+        }
+        .bacon .baconimg img{
+            height: 100px;
+            width: 100px;
+            border-radius: 50px;
+            /* border-radius:4px solid orange; */
+            float: left;
+            margin-top:20px;
+        }
+        .bacon .baconcontent{
+            height: 100%;
+            width: 80%;
+           float: left;
+        }
+
+
+        .menuright .chicken{
+            height: 25%;
+            width: 100%;
+            /* background-color: red; */
+            float: left;
+        }
+        .chicken .chickenimg {
+            height: 100%;
+            width: 20%;
+            /* border: 2px solid; */
+            float: left;
+        }
+        .chicken .chickencontent{
+            height: 100%;
+            width: 80%;
+           float: left;
+        }
+
+
+        .blooming{
+            height: 25%;
+            width: 100%;
+            /* background-color: aqua; */
+            float: left;
+        }
+        .blooming .bloomingimg {
+            height: 100%;
+            width: 20%;
+            /* border: 2px solid; */
+            float: left;
+        }
+        .blooming .bloomingcontent{
+            height: 100%;
+            width: 80%;
+           float: left;
+        }
+        
+
+        .sweet{
+            height: 25%;
+            width: 100%;
+            /* background-color: red; */
+            float: left;
+        }
+        .sweet .sweetimg{
+            height: 100%;
+            width: 20%;
+            /* border: 2px solid; */
+            float: left;
+        }
+        .sweet .sweetcontent{
+            height: 100%;
+            width: 80%;
+           float: left;
+        }
+        
+
+
+        .beautifulform{
+            height: 100vh;
+            width: 100vw;
+        }
+        .forform{
+            height:77.2% ;
+            width: 76%;
+            border-radius: 10px;
+            margin-left: 200px; 
+            margin-top: 100px; 
+            background-color: #f5e1e1;
+            /* border: 3px solid; */
+        }
+        .forform .formleftimage{
+            height: 100%;
+            width: 17%;
+            /* background-color: red; */
+            float: left;
+        }
+        .forform .formleftimage img{
+            float: left;
+        }
+        .forform .formrightimg{
+            height: 100%;
+            width: 17%;
+            /* background-color: red; */
+            float: left;
+        }
+        .forform .formrightimg img{
+            float: left;
+        }
+
+        form{
+            height: 100%;
+            width: 66%;
+            /* background-color: yellow; */
+            float: left;
+            text-align: center;
+        }
+        form .bookus{
+            height: 40px;
+            width: 200px;
+            border-radius: 20px;
+            border: 2px solid orange;
+            background-color: hsl(0, 0%, 100%) ;
+            text-align: center;
+            margin-top: 60px;
+            font-size:15px;
+        }
+        form h1{
+            font-size: 50px;
+            font-family: "Dancing Script", system-ui;
+            font-weight: 800;
+            margin-top: 10px;
+        }
+
+        form .butsect1{
+            height: 20%;
+            width: 100%;
+            /* border: 3px solid; */
+            margin-top: 20px;
+        } 
+        form .butsect2{
+            height: 20%;
+            width: 100%;
+            /* border: 3px solid; */
+        } 
+        form .butsect3{
+            height: 12%;
+            width: 100%;
+            /* border: 3px solid;    */
+        }   
+        form select{
+            height: 40px;
+            width: 200px;
+            border-radius: 10px;
+            border: 2px solid orange;
+            background-color: hsl(0, 0%, 100%);
+            margin-top: 10px;
+            margin-left:50px;
+            padding-left: 15px;
+            float: left;
+            font-size: 15px;
+        }
+         form input{
+            height: 40px;
+            width: 200px;
+            border-radius: 10px;
+            border: 2px solid orange;
+            background-color: hsl(0, 0%, 100%);
+            margin-top: 10px;
+            margin-left:50px;
+            padding-left: 15px;
+            float: left;
+            font-size: 15px;
+            color: black;
+        }
+        .submit{
+            height: 60px;
+            width: 210px;
+            border-radius: 20px;
+            border: 2px solid orange;
+            background-color: orange ;
+            text-align: center;
+            margin-top: 20px;
+            font-size:17px;
+            color: black;
+        }
+
+        .team{
+            height: 100vh;
+            width: 100vw;
+            /* border: 4px solid; */
+            /* text-align: center; */
+        }
+        .team .teamtop{
+            height: 25%;
+            width: 100%;
+            /* border: 2px solid; */
+            /* background-color: red; */
+        }
+        .ourteam{
+            height: 50px;
+            width: 200px;
+            border-radius: 15px;
+            border: 2px solid orange;
+            background-color: hsl(0, 0%, 100%);
+            margin-top: 50px;
+            margin-left:47%;
+            padding-left: 15px;
+            float: left;
+            font-size: 15px;
+            color: black;
+            text-align: center;
+
+        }
+        .teamtop .heading{
+            height: 70px;
+            width: 700px;
+            /* background-color: aqua; */
+            font-size: 50px;
+            font-family:  "Dancing Script", system-ui;;
+            font-weight: 800;
+            margin-left: 550px;
+            float: left;
+            margin-top: 10px;
+        }
+        .teambottom{
+            height: 75%;
+            width: 100%;
+            /* border: 4px solid; */
+        }
+        .teambottom img{
+            height: 300px;
+            width: 300px;
+            border-radius: 10px;
+            float: left;
+        }
+        .teambottom .box11{
+            height: 450px;
+            width: 300px;
+            border-radius: 10px;
+            background-color: black;
+            margin-left: 75px;
+            float: left;
+            margin-top: 20px;
+        }
+        .teambottom .box22{
+            height: 450px;
+            width: 300px;
+            border-radius: 10px;
+            background-color: black;
+            margin-left: 60px;
+            float: left;
+            margin-top: 20px;
+        }
+        .teambottom .box33{
+            height: 450px;
+            width: 300px;
+            border-radius: 10px;
+            background-color: black;
+            margin-left: 60px;
+            float: left;
+            margin-top: 20px;
+        }
+        .teambottom .box44{
+            height: 450px;
+            width: 300px;
+            border-radius: 10px;
+            background-color: black;
+            margin-left: 60px;
+            float: left;
+            margin-top: 20px;
+        }
+
+        .teambottom h3{
+            color: orange;
+            font-size: 32px;
+            padding-top: 320px;
+            text-align: center;
+        }
+        .teambottom p{
+            color: white;
+            font-size: 25px;
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        .box11:hover{
+            background-color: orange;
+        }
+        .box22:hover{
+            background-color: orange;
+        }
+        .box33:hover{
+            background-color: orange;
+        }
+        .box44:hover{
+            background-color: orange;
+        }
+        .box11 h3:hover{
+            color: black;
+        }
+        .box22 h3:hover{
+            color: black;
+        }
+        .box33 h3:hover{
+            color: black;
+        }
+        .box44 h3:hover{
+            color: black;
+        }
+
+        .testimonial{
+            height: 100vh;
+            width: 100vw;
+            /* background-color: blueviolet; */
+        }
+        .testimonialtop{
+            height: 20%;
+            width: 100%;
+            /* border: 2px solid; */
+        }
+        .testimonialbottom{
+            height: 80%;
+            width: 100%;
+            /* border: 2px solid; */
+        }
+        .testimonialtop button{
+            height: 50px;
+            width: 200px;
+            border-radius: 15px;
+            border: 2px solid orange;
+            background-color: hsl(0, 0%, 100%);
+            /* margin-top: 50px; */
+            margin-left:47%;
+            padding-left: 15px;
+            float: left;
+            font-size: 15px;
+            color: black;
+            text-align: center;
+        }
+        .testimonialtop .paragraph{
+            height: 70px;
+            width: 700px;
+            font-size: 50px;
+            font-family:  "Dancing Script", system-ui;;
+            font-weight: 800;
+            margin-left: 550px;
+            float: left;
+            margin-top: 5px;
+        }
+        
+        .testimonialbottom .testimonialbottomtop{
+            height: 50%;
+            width: 100%;
+            /* border: 2px solid; */
+        }
+        .testimonialbottom .testimonialbottombottom{
+            height: 50%;
+            width: 100%;
+            /* border: 2px solid; */
+        }
+        .person{
+            height: 300px;
+            width: 400px;
+            border: 3px solid orange;
+            float: left;
+            margin-right: 50px;
+            margin-left: 50px;
+            border-radius: 15px;
+        }
+        .personupper{
+            height: 50%;
+            width: 100%;
+            /* border: 2px solid; */
+            /* margin-right: 30px; */
+            /* text-align: center; */
+        }
+        .personlower{
+            height: 50%;
+            width: 100%;
+            /* border: 2px solid; */
+       
+        }
+        .personupper h1{
+            margin-left: 150px;
+            font-size: 35px;
+            margin-top:20px;
+        }
+        .personupper p{
+            margin-left: 150px;
+            font-size: 20px;
+            margin-top:10px;
+        }
+        .personlower p{
+            margin-left: 20px;
+            font-size: 18px;
+            text-align: justify;
+            margin-right: 20px;
+            /* margin-top: 20px; */
+            margin-top:20px;  
+        }
+        .ri-star-fill{
+            margin-left: 20px;
+            font-size: 28px;
+            margin-top: 10px;
+            /* word-spacing: 20px; */
+        }
+        .personupper img{
+            height: 100px;
+            width: 100px;
+            border-radius: 50px;
+            border-radius:4px solid orange;
+            background-color: orange;
+            float: left;
+            margin-left:20px;
+            margin-right:20px;
+            margin-top:20px;
+        }
+         .testimonialbottombottom .person{
+            height: 300px;
+            width: 400px;
+            border: 3px solid orange;
+            float: left;
+            margin-right: 50px;
+            margin-left: 50px;
+            margin-top: 30px;
+            border-radius: 15px;
+         }
+
+
+
+         main{
+            height: 100vh;
+            width: 100vw;
+         }
+         .maintop{
+            height: 25%;
+            width: 100%;
+            /* border: 2px solid; */
+            margin-top: 100px;
+            text-align: center;
+         }
+         .mainbottom{
+            height: 75%;
+            width: 100%;
+            /* border: 2px solid; */
+         }
+         .maintop button{
+            height: 40px;
+            width: 200px;
+            border-radius: 20px;
+            border: 2px solid orange;
+            background-color: hsl(0, 0%, 100%) ;
+            text-align: center;
+            margin-top: 50px;
+            font-size:15px;
+            /* margin-left: 43%; */
+         }
+         .maintop h1{
+            /* margin-left: 40%; */
+            font-family: "Dancing Script", system-ui;
+            margin-top: 20px;
+            font-weight: 800;
+            font-size: 50px;
+         }
+
+          .embed1{
+            height: 550px;
+            width: 420px;
+            margin-left: 100px;
+            border-radius: 15px;
+            float: left;
+            /* border: 2px solid black; */
+            /* font-size: 20px; */
+          }
+         .imgg1{
+            height: 480px;
+            width: 420px;
+            /* margin-left: 100px; */
+            border-radius: 15px;
+            float: left;
+            /* border: 2px solid; */
+         }
+         .box1{
+            height: 130px;
+            width: 300px;
+            border-radius: 15px;
+            background-color: white;
+            margin-left: 60px;
+            float: left;
+            margin-top: -80px;
+         }
+         .box1 .left1{
+            height: 100%;
+            width: 30%;
+            background-color: orange;
+            float: left;
+            padding-top: 30px;
+            text-align: center;
+            border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px;
+            font-size: 20px;
+         }
+         .box1 .right1{
+            height: 100%;
+            width: 70%;
+            float: left;
+            
+         }
+         .box1 .right1 p{
+            padding-top: 20px;
+            margin-left: 10px;
+            font-size: 25px;
+         
+         }
+         .box1 p:hover{
+            color: orange;
+         }
+
+         .embed2{
+            height: 550px;
+            width: 420px;
+            margin-left: 40px;
+            border-radius: 15px;
+            float: left;
+            /* border: 2px solid black; */
+            /* font-size: 20px; */
+          }
+         .imgg2{
+            height: 480px;
+            width: 420px;
+            /* margin-left: 100px; */
+            border-radius: 15px;
+            float: left;
+            /* border: 2px solid; */
+         }
+         .box2{
+            height: 130px;
+            width: 300px;
+            border-radius: 15px;
+            background-color: white;
+            margin-left: 60px;
+            float: left;
+            margin-top: -80px;
+         }
+         .box2 .left2{
+            height: 100%;
+            width: 30%;
+            background-color: orange;
+            float: left;
+            padding-top: 30px;
+            text-align: center;
+            font-size: 20px;
+            border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px;
+         }
+         .box2 .right2{
+            height: 100%;
+            width: 70%;
+            float: left;
+            
+         }
+         .box2 .right2 p{
+            padding-top: 20px;
+            margin-left: 10px;
+            font-size: 25px;
+         
+         }
+         .box2 p:hover{
+            color: orange;
+         }
+
+         .embed3{
+            height: 550px;
+            width: 420px;
+            margin-left: 40px;
+            border-radius: 15px;
+            float: left;
+            /* border: 2px solid black; */
+            /* font-size: 20px; */
+          }
+         .imgg3{
+            height: 480px;
+            width: 420px;
+            /* margin-left: 100px; */
+            border-radius: 15px;
+            float: left;
+            /* border: 2px solid; */
+         }
+         .box3{
+            height: 130px;
+            width: 300px;
+            border-radius: 15px;
+            background-color: white;
+            margin-left: 60px;
+            float: left;
+            margin-top: -80px;
+         }
+         .box3 .left3{
+            height: 100%;
+            width: 30%;
+            background-color: orange;
+            float: left;
+            padding-top: 30px;
+            text-align: center;
+            font-size: 20px;
+            border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px;
+         }
+         .box3 .right3{
+            height: 100%;
+            width: 70%;
+            float: left;
+            
+         }
+         .box3 .right3 p{
+            padding-top: 20px;
+            margin-left: 10px;
+            font-size: 25px;
+         
+         }
+         .box3 p:hover{
+            color: orange;
+         }
+
+
+         footer{
+            height: 100vh;
+            width: 100vw;
+            margin-top: 50px;
+            /* border: 2px solid; */
+         }
+         .foottop{
+            height: 20%;
+            width: 100%;
+            /* border: 3px solid orange;  */
+         }
+        .footmiddle{
+            height: 70%;
+            width: 100%;
+            background-color:  #f5e1e1;
+        }
+        .square1{
+            height: 60%;
+            width: 20%;
+            /* border: 2px solid orange; */
+            float: left;
+            margin-top: 100px;
+            margin-left: 40px;
+        }
+        .square1 h1{
+            font-family:"Dancing Script", system-ui ;
+            margin-top: 30px;
+            margin-left: 20px;
+            font-size: 45px;
+            font-weight: 800;
+        }
+        .square1 span{
+            color: orange;
+        }
+
+        .square1 p{
+            font-size: 20px;
+            margin-top: 20px;
+            margin-left: 20px;
+            color: rgb(94, 87, 87);
+        }
+        .socialmedia{
+            height: 20%;
+            width: 100%;
+            /* border: 2px solid orange; */
+            margin-top: 50px;
+        }
+        .facebook{
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            background-color: orange;
+            margin-left: 25px;
+            margin-top: 10px;
+            float: left;
+            text-align: center;
+            padding-left: 7px;
+            padding-top: 10px;
+        }
+        .facebook .ri-facebook-fill{
+            color:black ;
+           padding-left: 5px;
+           /* margin-top: 100px; */
+           font-size: 25px;
+        }
+        .twitter{
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            background-color: orange;
+            margin-left: 20px;
+            margin-top: 10px;
+            float: left;
+            text-align: center;
+            color: black;
+            padding-left: 7px;
+            padding-top: 10px;
+        }
+        .ri-twitter-fill{
+            color:black ;
+            padding-left: 5px;
+            /* padding-top: 10px; */
+            /* font-weight: 200; */
+            font-size: 25px;
+           
+        }
+        .instagram{
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            background-color: orange;
+            margin-left: 20px;
+            margin-top: 10px;
+            float: left;
+            text-align: center;
+            color: black;
+            padding-left: 7px;
+            padding-top: 10px;
+        }
+        .ri-instagram-line{
+            color:black ;
+            padding-left: 5px;
+            font-size: 25px;
+        }
+        .linkedin{
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            background-color: orange;
+            margin-left: 20px;
+            margin-top: 10px;
+            float: left;
+            text-align: center;
+            color: black;
+            padding-left: 7px;
+            padding-top: 10px;
+        }
+        .ri-linkedin-fill{
+            color:black ;
+            padding-left: 5px;
+            font-size: 25px;
+        }
+        
+
+        .square2{
+            height: 60%;
+            width: 20%;
+            /* border: 2px solid orange; */
+            float: left;
+            margin-top: 100px;
+            margin-left: 50px;
+            /* font-size: 20px; */
+           
+        }
+        .square2 p{   
+            font-size: 25px;
+            padding-left: 40px;
+            color: rgb(94, 87, 87);
+        }
+        .square2 p:hover{
+            color: orange;
+        }
+
+        .square2 h2{
+            padding-top: 30px;
+            padding-left: 40px;
+            font-size: 30px;
+        }
+        .ri-check-line{
+            font-size: 20px;
+            color: orange;
+            font-weight: 1000;
+        }
+        .cheeese{
+            margin-top: 20px;
+        }
+
+        .square3{
+            height: 60%;
+            width: 20%;
+            /* border: 2px solid orange; */
+            float: left;
+            margin-top: 100px;
+            margin-left: 50px;
+        }
+        .square3 h2{
+            padding-top: 30px;
+            padding-left: 40px;
+            font-size: 30px;
+        }
+        .square3 p{
+            font-size: 18px;
+            padding-left: 40px;
+            padding-top: 5px;
+            color: rgb(94, 87, 87);
+        }
+        .street{
+            margin-top: 20px;
+        }
+        .ri-map-pin-2-fill{
+            font-size: 25px;
+            color: orange;
+            font-weight: 1000;
+        }
+        .square3 .ri-phone-fill{
+            font-size: 25px;
+            color: orange;
+            font-weight: 1000;
+        }
+        .square3  .ri-mail-fill{
+            font-size: 25px;
+            color: orange;
+            font-weight: 1000;
+        }
+        .square3 .ri-timer-fill{
+            font-size: 25px;
+            color: orange;
+            font-weight: 1000;
+        }
+
+        .square4{
+            height: 60%;
+            width: 25%;
+            /* border: 2px solid orange; */
+            float: left;
+            margin-top: 100px;
+            margin-left: 50px;
+        }
+        .square4 h1{
+            font-size: 30px;
+            padding-top: 25px;
+            padding-left: 20px;
+        }
+        .square4 .sogaltop{
+            height: 40%;
+            width: 100%;
+            /* border:2px solid ; */
+        }
+        .divfrenchfri{
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            border: 2px solid orange;
+            text-align: center;
+            margin-top: 20px;
+            padding-top: 8px;
+            float: left;
+            margin-left: 20px;
+        }
+        .divfrenchfri img{
+            height: 80px;
+            width: 80px;
+            border-radius: 50%;
+          
+        }
+        .pizzzaaa{
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            border: 2px solid orange;
+            text-align: center;
+            margin-top: 20px;
+            padding-top: 8px;
+            float: left;
+            margin-left: 20px;
+        }
+        .pizzzaaa img{
+            height: 80px;
+            width: 80px;
+            border-radius: 50%;
+        }
+        .lemon{
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            border: 2px solid orange;
+            text-align: center;
+            margin-top: 20px;
+            padding-top: 8px;
+            float: left;
+            margin-left: 20px;
+        }
+        .lemon img{
+            height: 80px;
+            width: 80px;
+            border-radius: 50%;
+
+        }
+
+        .square4 .sogalbottom{
+            height: 40%;
+            width: 100%;
+            /* border:2px solid; */
+        }
+        
+        .salad{
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            border: 2px solid orange;
+            text-align: center;
+            margin-top: 20px;
+            padding-top: 8px;
+            float: left;
+            margin-left: 20px;
+        }
+        .salad img{
+            height: 80px;
+            width: 80px;
+            border-radius: 50%;
+        }
+
+        .flower{
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            border: 2px solid orange;
+            text-align: center;
+            margin-top: 20px;
+            padding-top: 8px;
+            float: left;
+            margin-left: 20px;
+        }
+        .flower img{
+            height: 80px;
+            width: 80px;
+            border-radius: 50%;
+        }
+        .chappati{ 
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            border: 2px solid orange;
+            text-align: center;
+            margin-top: 20px;
+            padding-top: 8px;
+            float: left;
+            margin-left: 20px;
+        }
+        .chappati img{
+            height: 80px;
+            width: 80px;
+            border-radius: 50%;
+        }
+
+         .footbottom{
+            height: 10%;
+            width: 100%;
+            border: 3px solid;
+            background-color: black;
+            font-size: 25px;
+         }
+         .footbottom .footbootomleft{
+            height: 100%;
+            width: 50%;
+            /* border: 2px solid white; */
+            float: left;
+            /* padding-top: 20px; */
+         }
+         .footbottom .footbootomleft .ri-copyright-fill{
+            float: left;
+            margin-left: 150px;
+            padding-top:17px;
+            font-size: 30px;
+         }
+         .footbottom .footbootomleft p{
+            color: white;
+            float: left;
+            padding-top: 20px;
+         }
+         .footbottom .footbootomleft span{
+            color: orange;
+         }
+
+         .footbottom .footbottomright{
+            height: 100%;
+            width: 50%;
+            float: left;
+         }
+         .footbottom .footbottomright p{
+            color: white;
+            margin-top: 20px;
+            margin-left: 100px;
+         }
+         .footbottom .footbottomright span{
+            color: orange;
+            text-decoration: underline white;
+         }
+         a{
+            text-decoration: none;
+         }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="headertop">
+            <div class="headleft">Cater<span>Serv</span></div>
+            <div class="headmiddle">
+                <div class="anker">
+                    <a href="#" class="home">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Services</a>
+                    <a href="#">Events</a>
+                    <a href="#">Menu</a>
+                    <a href="#">Pages</a>
+                    <a href="#">Contact</a>
+                </div>
+            </div>
+            <div class="headright">
+                <div class="search">
+                <i class="ri-search-line"></i>
+                </div>
+                <div class="book">
+                    <button>Book Now</button>
+                </div>
+            </div>
+        </div>
+        <div class="headerbottom">
+            <div class="headerbottomleft">
+                <div class="headerbottomleftcontent">
+                    <button class="welcome">WELCOME TO CATERSERV</button>
+                    <p>Book <span>Cater</span>Serv For Your Dream Event</p>
+                    <div class="buttonss">
+                        <button class="BookNow">Book Now</button>
+                        <button class="Knowmore">Know more</button>
+                    </div>
+                </div>
+            </div>
+            <div class="headerbottomright">
+                <div class="headerbottomrightbody">  <img src="https://themewagon.github.io/CaterServ/img/hero.png" alt="">
+                </div>        
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <div class="navleft"><img src="https://themewagon.github.io/CaterServ/img/about.jpg" alt="">
+        </div>
+
+
+        <div class="navright">
+            <button class="about">ABOUT US</button>
+            <h1>Trusted by 200 + satisfied clients</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit iusto odit corporis impedit facilis recusandae repudiandae excepturi quidem est minima, maiores libero enim. Commodi similique inventore ab maxime, fugit optio nesciunt eos consequatur id rerum quidem laboriosam exercitationem quibusdam dolorum?</p>
+            <div class="features">
+                <div class="fresh"><i class="ri-share-forward-fill"></i>Fresh and Fast food Delivery</div>
+                <div class="support"><i class="ri-share-forward-fill"></i>24/7 Customer Support</div>
+                <div class="easy"><i class="ri-share-forward-fill"></i>Easy Customization Options</div>
+                <div class="delicious"><i class="ri-share-forward-fill"></i>Delicious Deals for Delicios Meals </div>
+            </div>
+            <button class="aboutus">ABOUT US<i class="ri-arrow-right-line"></i></button>
+        </div>
+    </nav>
+
+    <section>
+        <div class="sectionleft">
+            <div class="box"> 
+                <div class="man">
+                    <i class="ri-group-fill"></i>
+                    <h1>689</h1>
+                    <p>HAPPY CUSTOMERS</p>
+                </div>
+                <div class="setting">
+                    <i class="ri-user-settings-fill"></i>
+                    <h1>107</h1>
+                    <p>EXPERT CHEFS</p>
+                </div>
+                <div class="tick">
+                    <i class="ri-check-fill"></i>
+                    <h1>253</h1>
+                    <p>EVENTS COMPLETE</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="sectright">
+            <img src="https://img.freepik.com/premium-photo/lobby-with-large-lobby-with-plant-sign-that-says-hotel_1109006-77651.jpg?w=900" alt="">
+        </div>
+    </section>
+
+    <div class="service">
+        <div class="servtop">
+            <button class="servbutton">OUR SERVICES</button>
+            <h1>What We Offer</h1>
+        </div>
+        <div class="servbottom">
+            <div class="offer">
+                <div class="wedding offers">
+                    <i class="ri-goblet-2-fill"></i>
+                    <h2>Wedding Services</h2>
+                    <p>Contary to popular beleif,ipsum is not simply random</p>
+                    <button>Read More</button>
+                </div>
+                <div class="corporate offers">
+                    <i class="ri-walk-fill"></i>
+                    <h2>Corporate Catering</h2>
+                    <p>Contrary to popular beleif, ipsum is not simply random</p>
+                    <button>Read More</button>
+                </div>
+                <div class="cocktail offers">
+                    <i class="ri-wheelchair-fill"></i>
+                    <h2>Cocktail Reception</h2>
+                    <p>Contrary to popular beleif, ipsum is not simply random</p>
+                    <button>Read More</button>
+                </div>
+                <div class="bento offers">
+                    <i class="ri-restaurant-fill"></i>
+                    <h2>Bento Catering</h2>
+                    <p>Contrary to popular beleif, ipsum is not simply random</p>
+                    <button>Read More</button>
+                </div>
+                <div class="pub offers">
+                    <i class="ri-goblet-2-fill"></i>
+                    <h2>Pub Party</h2>
+                    <p>Contrary to popular beleif, ipsum is not simply random</p>
+                    <button>Read More</button>
+                </div>
+                <div class="home offers">
+                    <i class="ri-walk-fill"></i>
+                    <h2>Home Delivery</h2>
+                    <p>Contrary to popular beleif, ipsum is not simply random</p>
+                    <button>Read More</button>
+                </div>
+                <div class="sitdown offers">
+                    <i class="ri-wheelchair-fill"></i>
+                    <h2>Sit-down Catering</h2>
+                    <p>Contrary to popular beleif, ipsum is not simply random</p>
+                    <button>Read More</button>
+                </div>
+                <div class="buffet offers">
+                    <i class="ri-restaurant-fill"></i>
+                    <h2>Buffet Catering</h2>
+                    <p>Contrary to popular beleif, ipsum is not simply random</p>
+                    <button>Read More</button>
+                </div>
+            </div>
+        </div>       
+    </div>
+    
+    <div class="event">
+        <div class="eventtop">
+            <button class="latevent">LATEST EVENTS</button>
+            <h1>Our Social & professional Events Gallery</h1>
+            <div class="manybutton">
+                <button>All Events</button>
+                <button>Wedding</button>
+                <button>Corporate</button>
+                <button>Cocktail</button>
+                <button>Buffet</button>
+            </div>
+        </div>
+        <div class="eventbottom">
+            <div class="image8">
+                <div class="img1 img"><img src="https://themewagon.github.io/CaterServ/img/event-1.jpg" alt=""></div>
+                <div class="img2 img"><img src="https://themewagon.github.io/CaterServ/img/event-2.jpg" alt=""></div>
+                <div class="img3 img"><img src="https://themewagon.github.io/CaterServ/img/event-3.jpg" alt=""></div>
+                <div class="img4 img"><img src="https://themewagon.github.io/CaterServ/img/event-4.jpg" alt=""></div>
+                <div class="img5 img"><img src="https://themewagon.github.io/CaterServ/img/event-5.jpg" alt=""></div>
+                <div class="img6 img"><img src="https://themewagon.github.io/CaterServ/img/event-6.jpg" alt=""></div>
+                <div class="img7 img"><img src="https://themewagon.github.io/CaterServ/img/event-7.jpg" alt=""></div>
+                <div class="img8 img"><img src="https://themewagon.github.io/CaterServ/img/event-8.jpg" alt=""></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="menu">
+        <div class="menutop">
+            <button class="ourmenu">OUR MENU</button>
+            <h1>Most Popular Food in the World</h1>
+            <div class="multiplebutton">
+                <button class="starter">Starter</button>
+                <button>Main Course</button>
+                <button>Drinks</button>
+                <button>Offers</button>
+                <button>Our Spesial</button>
+            </div>
+        </div>
+        <div class="menubottom">
+            <div class="menuleft">
+                <div class="paneer">
+                    <div class="paneerimg">
+                        <img src="https://themewagon.github.io/CaterServ/img/menu-01.jpg" alt="">
+                    </div>
+                    <div class="paneercontent">
+                        <h2>Paneer</h2>
+                        <h3>$90</h3>
+                        <div class="line"></div>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia vitae dignissimos nam ab a </p>
+                    </div>
+                </div>
+                <div class="sweetpotato">
+                   <div class="sweetpotatoimg">
+                        <img src="https://themewagon.github.io/CaterServ/img/menu-02.jpg" alt="">
+                   </div>
+                   <div class="sweetpotatocontent">
+                    <h2>Sweetpotato</h2>
+                    <h3>$90</h3>
+                    <div class="line"></div>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia vitae dignissimos nam ab a </p>
+                   </div>
+                </div>    
+                <div class="Sabudana">
+                    
+                        <div class="sabudanaimg">
+                            <img src="https://themewagon.github.io/CaterServ/img/menu-03.jpg" alt="">
+                        </div>
+                        <div class="sabudanacontent">
+                            <h2>Sabudana </h2>
+                            <h3>$90</h3>
+                            <div class="line"></div>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia vitae dignissimos nam ab a </p>
+                        </div>
+                </div>                     
+                <div class="pizza">
+                    <div class="pizzaimg">
+                        <img src="https://themewagon.github.io/CaterServ/img/menu-04.jpg" alt="">
+                    </div>
+                    <div class="pizzacontent">
+                        <h2>Pizza</h2>
+                        <h3>$90</h3>
+                        <div class="line"></div>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia vitae dignissimos nam ab a </p>
+                    </div>
+                </div>
+            </div>
+            <div class="menuright">
+                <div class="bacon">
+                    <div class="baconimg">
+                        <img src="https://themewagon.github.io/CaterServ/img/menu-05.jpg" alt="">
+                    </div>
+                    <div class="baconcontent">
+                        <h2>Bacon</h2>
+                        <h3>$90</h3>
+                        <div class="line"></div>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia vitae dignissimos nam ab a </p>
+                    </div>
+                </div>
+                <div class="chicken">
+                    <div class="chickenimg">
+                        <img src="https://themewagon.github.io/CaterServ/img/menu-06.jpg" alt="">
+                    </div>
+                    <div class="chickencontent">
+                        <h2>Chicken</h2>
+                        <h3>$90</h3>
+                        <div class="line"></div>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia vitae dignissimos nam ab a </p>
+                    </div>
+                </div>
+                <div class="blooming">
+                    <div class="bloomingimg">
+                        <img src="https://themewagon.github.io/CaterServ/img/menu-07.jpg" alt="">
+                    </div>
+                    <div class="bloomingcontent">
+                        <h2>Blooming</h2>
+                        <h3>$90</h3>
+                        <div class="line"></div>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia vitae dignissimos nam ab a </p>
+                    </div>
+                </div>
+                <div class="sweet">
+                    <div class="sweetimg">
+                        <img src="https://themewagon.github.io/CaterServ/img/menu-08.jpg" alt="">
+                    </div>
+                    <div class="sweetcontent">
+                        <h2>Sweet</h2>
+                        <h3>$90</h3>
+                        <div class="line"></div>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia vitae dignissimos nam ab a </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   <div class="beautifulform">
+        <div class="forform">
+            <div class="formleftimage">
+                <img src="https://themewagon.github.io/CaterServ/img/background-site.jpg" alt="">
+            </div>
+
+            <form action="">
+                <button class="bookus">BOOK US</button>
+                <h1>Where you want Our Services</h1>
+
+                <div class="butsect1">
+                    
+                    <select name="country" id="" class="country">
+                        <option value="Select">Select Country</option>
+                        <option value="usa">USA</option>
+                        <option value="uk">UK</option>
+                        <option value="india">INDIA</option>   
+                    </select>
+
+                 
+                    <select name="city" id="" class="city">
+                            <option value="selectcity">Select city</option>
+                            <option value="dop">Depend on country</option>
+                            <option value="uk">UK</option>
+                            <option value="india">India</option>   
+                        </select>
+
+
+                        <select name="palace" id="" class="palace">
+                            <option value="selectpalace">Select palace</option>
+                            <option value="dop">Depend on country</option>
+                            <option value="uk">UK</option>
+                            <option value="india">India</option>   
+                        </select> 
+                </div>
+                <div class="butsect2">
+                        <select name="smallevent" id="" class="smallevent">
+                            <option value="Small Event">Small Event</option>
+                            <option value="EventType">Event Type</option>
+                            <option value="BigEvent">Big Event</option>   
+                        </select>
+
+                        <select name="noofpalace" id="" class="noofpalace">
+                            <option value="noofpalace">No. of Palace</option>
+                            <option value="0ne">100-200</option>
+                            <option value="Three">300-400</option>
+                            <option value="Five">500-600</option>   
+                            <option value="Seven">700-800</option>              
+                            <option value="Nine">900-1000</option>   
+                            <option value="Ten">1000+</option> 
+                        </select>
+
+                        <select name="vegetarian" id="" class="vegetarian">
+                            <option value="veg">Vegetarian</option>
+                            <option value="NonVeg">Non-Vegetarian</option>
+                        </select>
+                </div>
+                <div class="butsect3">
+                    <input type="contact" placeholder="Your Contact No." class="contact">
+
+                    <input type="date" name="date" id="" class="date">
+
+                    <input type="email" name="email" id="" class="email" placeholder="Enter Your Email">
+                </div>
+
+                <button type="submit" class="submit">Submit Now</button>
+            </form>
+
+
+            <div class="formrightimg">
+                <img src="https://themewagon.github.io/CaterServ/img/background-site.jpg" alt="">
+            </div>
+        </div>
+   </div>
+
+   <div class="team">
+        <div class="teamtop">
+             <button class="ourteam">OUR TEAM</button>
+             <h1 class="heading">We Have experienced chef Team</h1>
+        </div>
+        <div class="teambottom">
+            <div class="box11" class="img1">
+                <img src="https://themewagon.github.io/CaterServ/img/team-1.jpg" alt="">
+                <h3>Henry</h3>
+                <p>Decoration Chef</p>
+            </div>
+            <div class="box22">
+                <img src="https://themewagon.github.io/CaterServ/img/team-2.jpg" alt="">
+                <h3>Jemes Born</h3>
+                <p>Executive Chef</p>
+            </div>
+            <div class="box33">
+                <img src="https://themewagon.github.io/CaterServ/img/team-3.jpg" alt="">
+                <h3>Martin Hill</h3>
+                <p>Kitchen Porter</p>
+            </div>
+            <div class="box44">
+                <img src="https://themewagon.github.io/CaterServ/img/team-4.jpg" alt="">
+                <h3>Adam Smith</h3>
+                <P>Head Chef</P>
+            </div>
+        </div>
+   </div>
+
+   <div class="testimonial">
+        <div class="testimonialtop">
+            <button>TESTIMONIAL</button>
+            <p class="paragraph">What Our Customers says!</p>
+        </div>
+        <div class="testimonialbottom">
+            <div class="testimonialbottomtop">
+                             <div class="person">
+                                    <div class="personupper">
+                                        <img src="https://themewagon.github.io/CaterServ/img/testimonial-3.jpg" alt="">
+                                        <h1>Person Name</h1>
+                                        <p>Profession</p>
+                                    </div>
+                                    <div class="personlower">
+                                        <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i>
+                                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, natus.</p>
+                                    </div>
+                             </div>
+
+                             <div class="person">
+                                <div class="personupper">
+                                    <img src="https://themewagon.github.io/CaterServ/img/testimonial-4.jpg" alt="">
+                                    <h1>Person Name</h1>
+                                    <p>Profession</p>
+                                </div>
+                                <div class="personlower">
+                                    <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, natus.</p>
+                                </div>
+                            </div>
+
+                            <div class="person">
+                                <div class="personupper">
+                                    <img src="https://themewagon.github.io/CaterServ/img/testimonial-1.jpg" alt="">
+                                    <h1>Person Name</h1>
+                                    <p>Profession</p>
+                                </div>
+                                <div class="personlower">
+                                    <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, natus.</p>
+                                </div>
+                            </div>
+            </div>
+            <div class="testimonialbottombottom">
+                <div class="person">
+                    <div class="personupper">
+                        <img src="https://themewagon.github.io/CaterServ/img/testimonial-2.jpg" alt="">
+                        <h1>Person Name</h1>
+                        <p>Profession</p>
+                    </div>
+                    <div class="personlower">
+                        <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, natus.</p>
+                    </div>
+                </div>
+
+                <div class="person">
+                    <div class="personupper">
+                        <img src="https://themewagon.github.io/CaterServ/img/testimonial-1.jpg" alt="">
+                        <h1>Person Name</h1>
+                        <p>Profession</p>
+                    </div>
+                    <div class="personlower">
+                        <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, natus.</p>
+                    </div>
+                </div>
+
+
+                <div class="person">
+                    <div class="personupper">
+                        <img src="https://themewagon.github.io/CaterServ/img/testimonial-3.jpg" alt="">
+                        <h1>Person Name</h1>
+                        <p>Profession</p>
+                    </div>
+                    <div class="personlower">
+                        <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, natus.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </div>
+
+   <main>
+    <div class="maintop">
+        <button>OUR BLOG</button>
+        <h1>Be First Who Read News</h1>
+    </div>
+    <div class="mainbottom">
+        <div class="embed1">
+                 <img src="https://themewagon.github.io/CaterServ/img/blog-1.jpg" alt=""class="imgg1">
+                 <div class="box1">
+                    <div class="left1">16 <br> Sep</div>
+                    <div class="right1">
+                        <p>How to get more test in your food from</p>
+                    </div>
+                 </div>
+        </div>
+        <div class="embed2">
+                 <img src="https://themewagon.github.io/CaterServ/img/blog-2.jpg" alt="" class="imgg2">
+                 <div class="box2">
+                    <div class="left2">16 <br> Sep</div>
+                    <div class="right2">
+                        <p>How to get more test in your food from</p>
+                    </div>
+                 </div>
+        </div>
+        <div class="embed3">
+                 <img src="https://themewagon.github.io/CaterServ/img/blog-3.jpg" alt="" class="imgg3">
+                 <div class="box3">
+                    <div class="left3">16 <br> Sep</div>
+                    <div class="right3">
+                        <p>How to get more test in your food from</p>
+                    </div>
+                 </div>
+        </div>
+    </div>
+       
+   </main>
+
+   <footer>
+        <div class="foottop">
+
+        </div>
+        <div class="footmiddle">
+            <div class="square1">
+                <h1><span>Cater</span>Serv</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam harum fugiat officia officiis non vel recusandae fuga voluptas nam itaque!</p>
+                <div class="socialmedia">
+                    <div class="facebook">
+                        
+                        <a href="https://www.facebook.com/"><i class="ri-facebook-fill">
+                        </i></a>
+                    </div>
+                    <div class="twitter">
+                        <a href="https://x.com/?lang=en-in"><i class="ri-twitter-fill"></i>
+                        </a>
+                    </div>
+                    <div class="instagram">
+                        <a href="https://www.instagram.com/"><i class="ri-instagram-line"></i>
+                        </a>
+                    </div>
+                    <div class="linkedin">
+                        <a href="https://in.linkedin.com/"><i class="ri-linkedin-fill"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="square2">
+                <h2>Special Facilities</h2>
+                <p class="cheeese"><i class="ri-check-line"></i>Cheese Burger</p>
+                <P><i class="ri-check-line"></i>Sandwich</P>
+                <p><i class="ri-check-line"></i>Panner Burger</p>
+                <p><i class="ri-check-line"></i>Special Sweets</p>
+            </div>
+            <div class="square3">
+                <h2>Contact Us</h2>
+                <p class="street"><i class="ri-map-pin-2-fill"></i>123 Street,New York, USA</p>
+                <p><i class="ri-phone-fill"></i>(+012)3456 7890 123</p>
+                <p><i class="ri-mail-fill"></i>info@example.com</p>
+                <p><i class="ri-timer-fill"></i>26/7 Hours Service</p>
+            </div>
+           <div class="square4">
+                <h1>Social Gallery</h1>
+                <div class="sogaltop">
+                    <div class="divfrenchfri">
+                        <img src="https://themewagon.github.io/CaterServ/img/menu-01.jpg" alt="">
+                    </div>
+                    <div class="pizzzaaa">
+                        <img src="https://themewagon.github.io/CaterServ/img/menu-02.jpg" alt="">
+                    </div>
+                    <div class="lemon">
+                        <img src="https://themewagon.github.io/CaterServ/img/menu-03.jpg" alt="">
+                    </div>
+                </div>
+                <div class="sogalbottom">
+                    <div class="salad">
+                        <img src="https://themewagon.github.io/CaterServ/img/menu-04.jpg" alt="">
+                    </div>
+                    <div class="flower">
+                        <img src="https://themewagon.github.io/CaterServ/img/menu-05.jpg" alt="">
+                    </div>
+                    <div class="chappati">
+                        <img src="https://themewagon.github.io/CaterServ/img/menu-06.jpg" alt="">
+                    </div>
+                </div> 
+            </div>
+        </div>
+        <div class="footbottom">
+            <div class="footbootomleft">
+                <i class="ri-copyright-fill"></i>
+                <p><span>Your Site Name</span>,All right reserved.</p>
+            </div>
+            <div class="footbottomright">
+                <p>Designed By <span> HTML Codex </span>Distributed By <span>ThemeWagon</span></p>
+            </div>
+        </div>
+   </footer>
+   
+</body>
+</html>
